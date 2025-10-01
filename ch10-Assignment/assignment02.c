@@ -18,7 +18,7 @@ typedef struct login {
 
 void assignment03();
 Login inputLogin(Login login);
-int cheakLogin(Login *login, int index);
+int cheakLogin(Login *login, Login* loginCheak, int index);
 
 int main()
 {
@@ -29,14 +29,15 @@ int main()
 
 void assignment03()
 {
+	Login loginCheak[MAXARR] = { 0 };
 	Login login[MAXARR] = {
 		{ "guest", "idontknow" }
-};
+	};
 
 	for (int i = 0; i < MAXARR; i++)
 	{
-		login[i]=inputLogin(*login);
-		if (cheakLogin(login, i) == 0)
+		loginCheak[i]=inputLogin(*loginCheak);
+		if (cheakLogin(login, loginCheak, i) == 0)
 		{
 			printf("로그인 성공\n");
 		}
@@ -60,11 +61,11 @@ Login inputLogin(Login login)
 	return login;
 }
 
-int cheakLogin(Login *login, int index)
+int cheakLogin(Login *login, Login *loginCheak, int index)
 {
 	for (int i = 0; i < MAXARR; i++)
 	{
-		if (strcmp(login[index].id, login[i].id) == 0 && strcmp(login[index].pw, login[i].pw) == 0)
+		if (strcmp(loginCheak[index].id, login[i].id) == 0 && strcmp(loginCheak[index].pw, login[i].pw) == 0)
 		{
 			return 0;
 		}
