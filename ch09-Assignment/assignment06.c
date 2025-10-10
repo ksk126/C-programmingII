@@ -59,8 +59,12 @@ void inputLogin(char* inputId, char* inputPw)
 
 int compareLogin(char* inputId, char* inputPw, Login* login)
 {
-	for (int i = 0; i < strlen(login); i++)
+	for (int i = 0; i < MAX; i++)
 	{
+		if (login[i].id == 0)
+		{
+			break;
+		}
 		if (strcmp(inputId, login[i].id) == 0)
 		{
 			if (strcmp(inputPw, login[i].pw) == 0)
