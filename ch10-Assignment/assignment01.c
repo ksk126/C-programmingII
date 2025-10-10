@@ -15,19 +15,19 @@ typedef struct login {
 	char pw[MAX];
 }Login;
 
-void assignment01();
+void assignment03();
 Login inputLogin(Login login);
 int cheakMax(char *idOrPw);
 void printLogin(Login login);
 
 int main()
 {
-	assignment01();
+	assignment03();
 
 	return 0;
 }
 
-void assignment01()
+void assignment03()
 {
 	Login login = { 0 };
 

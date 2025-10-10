@@ -1,21 +1,29 @@
+/*
+학번: 202511210
+이름: 김수경
+프로그램명: assignment03
+날짜: 25.10.10
+*/
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <string.h>
 #include <ctype.h>
 #define MAX 128
 
-void assignment01();
+void assignment03();
 void inputStr(char* str);
 void changeStr(char* str);
 void printStr(char* str);
 
 int main()
 {
-	assignment01();
+	assignment03();
 
 	return 0;
 }
 
-void assignment01()
+void assignment03()
 {
 	char str[MAX];
 

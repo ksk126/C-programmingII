@@ -1,3 +1,10 @@
+/*
+학번: 202511210
+이름: 김수경
+프로그램명: assignment02
+날짜: 25.10.10
+*/
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
