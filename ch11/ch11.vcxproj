@@ -126,6 +126,9 @@
     <ClCompile Include="ch11-01function.c" />
     <ClCompile Include="ch11-01.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ch11-01.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
