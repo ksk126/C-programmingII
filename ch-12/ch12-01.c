@@ -28,7 +28,7 @@ int test_io(void)
 	fBTS = fopen("C:\\TEMP\\BTS.txt", "w");
 	if (fBTS == NULL)
 	{
-		fprintf(stderr, "파일을 열 수 없습니다..\n");
+		fprintf(stderr, "파일을 열 수 없습니다.\n");
 		//exit(0); 0을 리턴한 뒤 종료
 	}
 	else
